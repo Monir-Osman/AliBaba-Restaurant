@@ -1,0 +1,63 @@
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1604741333810-0ef6017256da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  display: flex;
+  align-items: center;
+}
+
+.header__text__container {
+  padding: 50px;
+  margin-bottom: 250px;
+  margin-left: 10%;
+  position: relative;
+}
+.header__text__container > h1 {
+  color: white;
+  font-size: 6rem;
+  font-family: "Lobster", cursive, serif;
+  font-weight: 300;
+}
+.header__text__container > p {
+  color: white;
+  font-family: "Roboto", sans-serif, serif;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  margin-left: 8px;
+  margin-bottom: 50px;
+}
+.header__text__container > a {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px;
+  border: 2px solid orange;
+  color: orange;
+  border-radius: 30px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+
+.header__text__container > a:hover {
+  color: black;
+  background-color: orange;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 500px) {
+  .header__text__container {
+    margin-left: 0;
+  }
+  .header__text__container > a {
+    position: absolute;
+    bottom: 0;
+  }
+  .header__text__container > h1 {
+    font-size: 5rem;
+  }
+}
